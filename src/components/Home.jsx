@@ -1,6 +1,7 @@
 import React from "react";
 import Data from "./CardsData";
 import Card from "./card";
+import "../App.css";
 
 const Home = () => {
   const cards = Data.map((item) => {
@@ -38,7 +39,9 @@ const Home = () => {
       {/* section Two */}
 
       <section className="cards--section">
-        <div className="container">{cards}</div>
+        <div className="container card_container">
+          <div className="cards">{cards}</div>
+        </div>
       </section>
     </>
   );

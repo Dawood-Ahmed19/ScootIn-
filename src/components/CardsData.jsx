@@ -1,6 +1,6 @@
-import iconOne from "../assets/Images/iconOne.png";
-import iconTwo from "../assets/Images/iconTwo.png";
-import iconThree from "../assets/Images/iconThree.png";
+import iconOne from "../assets/Images/iconOne.svg";
+import iconTwo from "../assets/Images/iconTwo.svg";
+import iconThree from "../assets/Images/iconThree.svg";
 export default [
   {
     id: 1,

@@ -10,7 +10,9 @@ const card = (props) => {
         <div className="card--title">
           <h4>{props.title}</h4>
         </div>
-        <div className="card--details">{props.details}</div>
+        <div className="card--details">
+          <p>{props.details}</p>
+        </div>
       </div>
     </>
   );
