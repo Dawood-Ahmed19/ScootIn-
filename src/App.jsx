@@ -5,6 +5,7 @@ import About from "./components/About";
 import Locations from "./components/Locations";
 import Careers from "./components/Careers";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
         <Route exact path="/Locations" element={<Locations />} />
         <Route exact path="/Careers" element={<Careers />} />
       </Routes>
+
+      <footer className="footer">
+        <Footer />
+      </footer>
     </BrowserRouter>
   );
 }

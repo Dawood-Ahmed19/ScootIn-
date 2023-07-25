@@ -305,6 +305,32 @@ section.cards--section {
   justify-self: start;
 }
 
+.signupSection {
+  height: 300px;
+  width: 100%;
+  background: url(assets/Images/signupBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signupContent {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.signupContent > h1 {
+  color: var(--snow-white);
+}
+
+footer {
+  background-color: #333a44;
+}
+
+a.footer--logo {
+  color: var(--snow-white);
+}
+
 /* ----------------------------------------------- ----------------------------------------------- */
 /* ----------------------------------------------- ----------------------------------------------- */
 /* ----------------------------------------------- ----------------------------------------------- */

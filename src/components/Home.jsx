@@ -142,6 +142,17 @@ const Home = () => {
       </section>
 
       {/* SignUp */}
+
+      <section className="signupSection">
+        <div className="container">
+          <div className="signupContent">
+            <h1>
+              Sign up and <br /> Scoot off today
+            </h1>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 };
