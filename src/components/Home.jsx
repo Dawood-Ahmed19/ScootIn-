@@ -1,6 +1,12 @@
 import React from "react";
+import Data from "./CardsData";
+import Card from "./card";
 
 const Home = () => {
+  const cards = Data.map((item) => {
+    return <Card key={item.id} {...item} />;
+  });
+
   return (
     <>
       <section className="home--section">
@@ -27,6 +33,12 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* section Two */}
+
+      <section className="cards--section">
+        <div className="container">{cards}</div>
       </section>
     </>
   );
