@@ -42,7 +42,7 @@ h1 {
 
 h2 {
   cursor: default;
-  font-size: 48px;
+  font-size: clamp(1.88rem, calc(1.48rem + 1.96vw), 3rem);
   font-family: var(--spacemono-font);
 }
 
@@ -86,6 +86,7 @@ header {
   position: fixed;
   inset: 0;
   background-color: var(--snow-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
 
@@ -247,6 +248,45 @@ section.cards--section {
   text-align: justify;
   color: var(--dim-gray);
   font-family: var(--LexendDeca-font);
+}
+
+.usageSection {
+  padding-block: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.usage-content {
+  display: grid;
+  grid-template: 1fr / repeat(2, 1fr);
+}
+
+.colOne {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.usage-title > h2 {
+  color: var(--dark-navy);
+  line-height: 1.2;
+}
+
+.usage--details > p {
+  color: var(--dim-gray);
+  font-size: 1rem;
+  line-height: 1.3;
+  font-family: var(--LexendDeca-font);
+  text-align: justify;
+}
+
+.colTwo {
+  justify-self: end;
+}
+
+.col1-sec2 {
+  justify-self: start;
 }
 
 /* ----------------------------------------------- ----------------------------------------------- */
