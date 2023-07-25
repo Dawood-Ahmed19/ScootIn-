@@ -36,13 +36,13 @@ p {
 
 h1 {
   cursor: default;
-  font-size: clamp(1.88rem, calc(1.31rem + 2.83vw), 3.5rem);
+  font-size: clamp(2.5rem, calc(2.15rem + 1.74vw), 3.5rem);
   font-family: var(--spacemono-font);
 }
 
 h2 {
   cursor: default;
-  font-size: clamp(1.56rem, calc(1.06rem + 2.5vw), 3rem);
+  font-size: clamp(2rem, calc(1.65rem + 1.74vw), 3rem);
   font-family: var(--spacemono-font);
 }
 
@@ -184,7 +184,7 @@ header {
 .details > p {
   position: relative;
   color: var(--snow-white);
-  font-size: clamp(0.5rem, calc(0.33rem + 0.87vw), 1rem);
+  font-size: 15px;
   text-align: justify;
   font-family: var(--LexendDeca-font);
   font-weight: 400;
@@ -286,7 +286,7 @@ section.cards--section {
 
 .usage--details > p {
   color: var(--dim-gray);
-  font-size: clamp(0.5rem, calc(0.33rem + 0.87vw), 1rem);
+  font-size: 15px;
   line-height: 1.3;
   font-family: var(--LexendDeca-font);
   text-align: justify;
@@ -405,5 +405,9 @@ section.cards--section {
   }
   section.cards--section {
     padding-block-end: 0;
+  }
+  .sec-two {
+    display: flex;
+    justify-content: flex-start;
   }
 }
