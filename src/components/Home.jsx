@@ -48,7 +48,7 @@ const Home = () => {
 
       {/* Section Three */}
 
-      <section className="usageSection">
+      <section className="usageSection usage-two">
         <div className="container usage-container">
           <div className="usage-content">
             <div className="colOne">
@@ -152,7 +152,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
     </>
   );
 };
