@@ -92,7 +92,7 @@ const Home = () => {
                   Coming to a city <br /> near you
                 </h2>
               </div>
-              <div className="usage--details">
+              <div className="usage--details sec-two">
                 <p>
                   Scoot is available in 4 major cities so far. We’re expanding{" "}
                   <br />
@@ -140,6 +140,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* SignUp */}
     </>
   );
 };
