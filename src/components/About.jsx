@@ -2,8 +2,14 @@ import React from "react";
 import PersonImage from "../assets/Images/about-image1.png";
 import PersonImageOne from "../assets/Images/about-image2.png";
 import "../App.css";
+import ValueData from "./ValuesCardsData";
+import ValueCards from "./ValueCards";
 
 const About = () => {
+  const valueCards = ValueData.map((item) => {
+    return <ValueCards key={item.id} {...item} />;
+  });
+
   return (
     <>
       {/* Header */}
@@ -84,6 +90,15 @@ const About = () => {
       </div>
 
       {/* Section Four */}
+
+      <section className="values">
+        <div className="values-title">
+          <h2>Our Values</h2>
+        </div>
+        <div className="container">
+          <div className="values-content">{valueCards}</div>
+        </div>
+      </section>
     </>
   );
 };

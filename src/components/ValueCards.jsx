@@ -7,6 +7,12 @@ const ValueCards = (props) => {
         <div className="values--image">
           <img src={props.image} alt="image" />
         </div>
+        <div className="values-title">
+          <h4>{props.title}</h4>
+        </div>
+        <div className="values-details">
+          <p>{props.detail}</p>
+        </div>
       </div>
     </>
   );
