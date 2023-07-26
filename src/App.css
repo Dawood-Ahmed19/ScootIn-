@@ -321,6 +321,7 @@ section.cards--section {
 
 .signupContent > h1 {
   color: var(--snow-white);
+  font-size: clamp(1.56rem, calc(0.89rem + 3.37vw), 3.5rem);
 }
 
 footer {
@@ -329,6 +330,21 @@ footer {
 
 a.footer--logo {
   color: var(--snow-white);
+}
+
+.social--icons > ul {
+  display: flex;
+  gap: 20px;
+}
+
+.social--icons > ul > li > a {
+  color: var(--snow-white);
+  font-size: clamp(1.13rem, calc(0.99rem + 0.65vw), 1.5rem);
+  transition: 300ms all ease;
+}
+
+.social--icons > ul > li > a:hover {
+  color: var(--yellow-color);
 }
 
 /* ----------------------------------------------- ----------------------------------------------- */

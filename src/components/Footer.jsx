@@ -1,5 +1,11 @@
 import React from "react";
 import "../index.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -9,16 +15,22 @@ const Footer = () => {
           <a className="footer--logo">Scoot</a>
         </div>
       </div>
-      <div className="social--buttons">
+      <div className="social--icons">
         <ul type="none">
           <li>
-            <a href="#"></a>
+            <a href="#">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
           </li>
           <li>
-            <a href="#"></a>
+            <a href="#">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
           </li>
           <li>
-            <a href="#"></a>
+            <a href="#">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
           </li>
         </ul>
       </div>
