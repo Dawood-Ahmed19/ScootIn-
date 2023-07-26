@@ -48,7 +48,7 @@ const Home = () => {
 
       {/* Section Three */}
 
-      <section className="usageSection usage-two">
+      <section className="usageSection">
         <div className="container usage-container">
           <div className="usage-content">
             <div className="colOne">
