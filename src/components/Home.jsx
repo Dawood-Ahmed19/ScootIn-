@@ -5,7 +5,6 @@ import "../App.css";
 import PersonImage from "../assets/Images/pic1.png";
 import PersonImageOne from "../assets/Images/pic2.png";
 
-
 const Home = () => {
   const cards = Data.map((item) => {
     return <Card key={item.id} {...item} />;

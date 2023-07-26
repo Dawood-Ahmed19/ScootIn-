@@ -86,7 +86,7 @@ header {
   position: fixed;
   inset: 0;
   background-color: var(--snow-white);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   z-index: 999;
 }
 
@@ -306,11 +306,12 @@ section.cards--section {
 }
 
 .signupSection {
-  height: 300px;
+  height: 100%;
   width: 100%;
   background: url(assets/Images/signupBg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-block: 50px;
 }
 
 .signupContent {
@@ -356,22 +357,59 @@ a.footer--logo {
 /* About Page */
 
 .abt--header {
-  margin-top: 100px;
   width: 100%;
   height: 200px;
   background: url(/src/assets/Images/About-Background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 100px;
 }
 
 .about--title {
   height: 100%;
   display: flex;
   align-items: center;
+  animation: FadeIn 600ms;
 }
 
 .about--title > h1 {
   color: var(--snow-white);
+}
+
+.about-section {
+  height: 100%;
+  width: 100%;
+  padding-block: 100px;
+}
+
+.abt-col1 {
+  position: relative;
+}
+
+.abt-col1::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  background: url(./assets/Images/About-path1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+}
+
+.abt-col2 {
+  position: relative;
+}
+
+.abt-col2::before {
+  content: "";
+  position: absolute;
+  background: url(./assets/Images/about-path2.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+  background-position-y: top;
 }
 
 /* ----------------------------------------------- ----------------------------------------------- */
