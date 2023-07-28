@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../index";
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="nav--container">
@@ -11,24 +11,24 @@ const Navbar = () => {
         <div className="nav">
           <ul type="none" className="nav--list">
             <li>
-              <Link className="nav--item active" to="/Home">
+              <NavLink className="nav--item" to="/Home">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav--item" to="/About">
+              <NavLink className="nav--item" to="/About">
                 About
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav--item" to="/Locations">
+              <NavLink className="nav--item" to="/Locations">
                 Location
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav--item" to="/Careers">
+              <NavLink className="nav--item" to="/Careers">
                 Careers
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

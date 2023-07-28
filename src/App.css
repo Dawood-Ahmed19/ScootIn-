@@ -560,3 +560,13 @@ section.values {
     justify-content: center;
   }
 }
+
+@media (max-width: 1800px) {
+  .abt-col1::before {
+    display: none;
+  }
+
+  .abt-col2::before {
+    display: none;
+  }
+}
