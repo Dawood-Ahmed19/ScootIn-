@@ -180,22 +180,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* SignUp */}
-
-      <section className="signupSection">
-        <div className="container">
-          <div
-            data-aos="fade-down"
-            data-aos-delay="400"
-            className="signupContent"
-          >
-            <h1>
-              Sign up and <br /> Scoot off today
-            </h1>
-          </div>
-        </div>
-      </section>
     </>
   );
 };

@@ -5,19 +5,24 @@ const Locations = () => {
   return (
     <>
       {/* Section one */}
+
       <section className="map">
         <div className="container">
           <div className="map-content">
-            <div className="mpCol01">
+            <div data-aos="zoom-in" data-aos-delay="100" className="mpCol01">
               <img src={MapImage} alt="mapimg" />
             </div>
             <div className="mpCol02">
-              <div className="mp-title">
+              <div data-aos="fade-up" data-aos-delay="200" className="mp-title">
                 <h1>
                   Your City Not <br /> Listed?
                 </h1>
               </div>
-              <div className="mp-details">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="300"
+                className="mp-details"
+              >
                 <p>
                   If you’d like to see Scoot in your hometown, be sure to let us
                   know. We track <br /> requests and plan launches based on
