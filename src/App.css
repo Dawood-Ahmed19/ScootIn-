@@ -457,6 +457,75 @@ section.values {
 /* ----------------------------------------------- ----------------------------------------------- */
 /* ----------------------------------------------- ----------------------------------------------- */
 /* ----------------------------------------------- ----------------------------------------------- */
+/* ----------------------------------------------- ----------------------------------------------- */
+/* ----------------------------------------------- ----------------------------------------------- */
+/* ----------------------------------------------- ----------------------------------------------- */
+/* ----------------------------------------------- ----------------------------------------------- */
+
+/* Fifth Section */
+
+section.faqs {
+  display: flex;
+  padding-block: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.fqCol1 > h3 {
+  color: var(--dark-navy);
+}
+
+.faqs-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question01 {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fqCol1 {
+  align-self: flex-start;
+}
+
+.heading {
+  max-width: 650px;
+  min-width: 650px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading > h4 {
+  color: var(--dark-navy);
+  font-size: clamp(0.75rem, calc(0.49rem + 1.3vw), 1.5rem);
+}
+
+.heading > a {
+  cursor: pointer;
+  color: var(--yellow-color);
+}
+
+.paragraph > p {
+  color: var(--dark-navy);
+  font-family: var(--LexendDeca-font);
+  line-height: 2;
+  font-size: clamp(0.75rem, calc(0.68rem + 0.33vw), 0.94rem);
+}
+
+/* ----------------------------------------------- ----------------------------------------------- */
+/* ----------------------------------------------- ----------------------------------------------- */
+/* ----------------------------------------------- ----------------------------------------------- */
+/* ----------------------------------------------- ----------------------------------------------- */
+/* ----------------------------------------------- ----------------------------------------------- */
+/* ----------------------------------------------- ----------------------------------------------- */
+/* ----------------------------------------------- ----------------------------------------------- */
 
 /* KeyFrame Animations */
 
@@ -568,5 +637,37 @@ section.values {
 
   .abt-col2::before {
     display: none;
+  }
+}
+
+@media (max-width: 1030px) {
+  .faqs-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .heading {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 430px) {
+  .heading {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 380px) {
+  .heading {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .paragraph > p {
+    text-align: justify;
   }
 }

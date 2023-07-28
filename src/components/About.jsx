@@ -4,10 +4,16 @@ import PersonImageOne from "../assets/Images/about-image2.png";
 import "../App.css";
 import ValueData from "./ValuesCardsData";
 import ValueCards from "./ValueCards";
+import Faqs from "./Faqs";
+import FaqsData from "./FaqsData";
 
 const About = () => {
   const valueCards = ValueData.map((item) => {
     return <ValueCards key={item.id} {...item} />;
+  });
+
+  const faqsQues = FaqsData.map((item) => {
+    return <Faqs key={item.id} {...item} />;
   });
 
   return (
@@ -121,6 +127,22 @@ const About = () => {
         </div>
         <div className="container">
           <div className="values-content">{valueCards}</div>
+        </div>
+      </section>
+
+      {/* Section Five */}
+
+      <section className="faqs">
+        <div className="values-title">
+          <h2>FAQs</h2>
+        </div>
+        <div className="container">
+          <div className="faqs-content">
+            <div data-aos="fade-right" data-aos-delay="100" className="fqCol1">
+              <h3>How it works</h3>
+            </div>
+            <div className="fqCol2">{faqsQues}</div>
+          </div>
         </div>
       </section>
     </>
