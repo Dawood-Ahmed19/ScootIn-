@@ -52,12 +52,20 @@ const Home = () => {
         <div className="container usage-container">
           <div className="usage-content">
             <div className="colOne">
-              <div className="usage-title">
+              <div
+                data-aos="fade-down"
+                data-aos-delay="200"
+                className="usage-title"
+              >
                 <h2>
                   Easy to use <br /> riding telemetry
                 </h2>
               </div>
-              <div className="usage--details">
+              <div
+                data-aos="fade-down"
+                data-aos-delay="300"
+                className="usage--details"
+              >
                 <p>
                   The Scoot app is available with riding telemetry. This means{" "}
                   <br />
@@ -66,11 +74,15 @@ const Home = () => {
                   more <br /> things all in an easy to use app.
                 </p>
               </div>
-              <div className="learnBtn">
+              <div
+                data-aos="fade-down"
+                data-aos-delay="400"
+                className="learnBtn"
+              >
                 <button className="btn">Learn More</button>
               </div>
             </div>
-            <div className="colTwo">
+            <div data-aos="fade-up" data-aos-delay="500" className="colTwo">
               <img src={PersonImage} alt="person-Image" />
             </div>
           </div>
@@ -82,17 +94,29 @@ const Home = () => {
       <section className="usageSection">
         <div className="container usage-container">
           <div className="usage-content">
-            <div className="colTwo col1-sec2">
+            <div
+              data-aos="fade-down"
+              data-aos-delay="200"
+              className="colTwo col1-sec2"
+            >
               <img src={PersonImageOne} alt="person-Image" />
             </div>
 
             <div className="colOne col2-sec2">
-              <div className="usage-title">
+              <div
+                data-aos="fade-down"
+                data-aos-delay="200"
+                className="usage-title"
+              >
                 <h2>
                   Coming to a city <br /> near you
                 </h2>
               </div>
-              <div className="usage--details sec-two">
+              <div
+                data-aos="fade-down"
+                data-aos-delay="300"
+                className="usage--details sec-two"
+              >
                 <p>
                   Scoot is available in 4 major cities so far. We’re expanding{" "}
                   <br />
@@ -103,7 +127,11 @@ const Home = () => {
                   cities over the coming year.
                 </p>
               </div>
-              <div className="learnBtn">
+              <div
+                data-aos="fade-down"
+                data-aos-delay="400"
+                className="learnBtn"
+              >
                 <button className="btn">Learn More</button>
               </div>
             </div>
@@ -117,12 +145,20 @@ const Home = () => {
         <div className="container usage-container">
           <div className="usage-content">
             <div className="colOne">
-              <div className="usage-title">
+              <div
+                data-aos="fade-down"
+                data-aos-delay="200"
+                className="usage-title"
+              >
                 <h2>
                   Zero hassle <br /> payments
                 </h2>
               </div>
-              <div className="usage--details">
+              <div
+                data-aos="fade-down"
+                data-aos-delay="300"
+                className="usage--details"
+              >
                 <p>
                   Our payment is as easy as one two three. We accept most <br />{" "}
                   credit cards and debit cards. You can also link your PayPal{" "}
@@ -130,11 +166,15 @@ const Home = () => {
                   You <br /> can defer payment for up to a month.
                 </p>
               </div>
-              <div className="learnBtn">
+              <div
+                data-aos="fade-down"
+                data-aos-delay="400"
+                className="learnBtn"
+              >
                 <button className="btn">Learn More</button>
               </div>
             </div>
-            <div className="colTwo">
+            <div data-aos="fade-left" data-aos-delay="500" className="colTwo">
               <img src={PersonImage} alt="person-Image" />
             </div>
           </div>
@@ -145,7 +185,11 @@ const Home = () => {
 
       <section className="signupSection">
         <div className="container">
-          <div className="signupContent">
+          <div
+            data-aos="fade-down"
+            data-aos-delay="400"
+            className="signupContent"
+          >
             <h1>
               Sign up and <br /> Scoot off today
             </h1>

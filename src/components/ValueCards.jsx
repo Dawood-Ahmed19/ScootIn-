@@ -3,7 +3,11 @@ import React from "react";
 const ValueCards = (props) => {
   return (
     <>
-      <div className="valueCard-Container">
+      <div
+        data-aos="fade-up"
+        data-aos-delay={props.delay}
+        className="valueCard-Container"
+      >
         <div className="values--image">
           <img src={props.image} alt="image" />
         </div>

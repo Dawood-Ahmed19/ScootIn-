@@ -5,12 +5,14 @@ export default [
   {
     id: 1,
     title: "Our Tech",
+    delay: "200",
     image: ImageOne,
     detail:
       "We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!",
   },
   {
     id: 2,
+    delay: "300",
     title: "Our Integrity",
     image: ImageTwo,
     detail:
@@ -18,6 +20,7 @@ export default [
   },
   {
     id: 3,
+    delay: "400",
     title: "Our Community",
     image: ImageThree,
     detail:

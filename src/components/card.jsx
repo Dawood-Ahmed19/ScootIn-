@@ -3,7 +3,11 @@ import React from "react";
 const card = (props) => {
   return (
     <>
-      <div className="card--container">
+      <div
+        data-aos="fade-up"
+        data-aos-delay={props.delay}
+        className="card--container"
+      >
         <div className="card--image">
           <img src={props.image} alt="card-image" />
         </div>
