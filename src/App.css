@@ -98,7 +98,7 @@ header {
   font-family: var(--spacemono-font);
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 100%;
   width: min(1300px, 100% - 2rem);
   margin: 0 auto;
   align-items: center;
@@ -144,10 +144,10 @@ header {
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
+  display: none;
 }
 
 .bar {
-  display: none;
   width: 30px;
   height: 4px;
   background-color: var(--yellow-color);
@@ -810,12 +810,44 @@ section.map {
 }
 
 @media (max-width: 750px) {
-  .nav {
-    display: none;
+  .navItems {
+    transform: translateX(-100%);
+    transition: 500ms ease-in-out;
+    position: fixed;
+    left: 0;
+    height: 90%;
+    width: 80%;
+    background-color: var(--dark-navy);
+    margin-top: 50px;
+    display: flex;
+    align-items: self-start;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .bar {
-    display: block;
+  .navItems.active {
+    transform: translateX(0);
+  }
+
+  .nav .navItems > ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mob-button {
+    align-self: center;
+  }
+
+  .nav ul > li > a {
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+  }
+
+  .toggle-navbar {
+    display: flex;
   }
 }
 

@@ -23,13 +23,18 @@ const Navbar = ({ items }) => {
           <a>Scoot</a>
         </div>
         <div className="nav">
-          <ul type="none" className="nav--list">
-            {items.map((item, index) => (
-              <li key={index}>
-                <NavLink to={item.link}>{item.label}</NavLink>
-              </li>
-            ))}
-          </ul>
+          <div className={bar ? "navItems" : "navItems active"}>
+            <ul type="none" className="nav--list">
+              {items.map((item, index) => (
+                <li key={index}>
+                  <NavLink to={item.link}>{item.label}</NavLink>
+                </li>
+              ))}
+            </ul>
+            <div className="get--button mob-button">
+              <button className="btn">Get Scootin</button>
+            </div>
+          </div>
         </div>
       </div>
       <div className="get--button">
