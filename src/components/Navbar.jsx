@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = ({ items }) => {
-  const [bar, setbar] = useState(true);
+  const [bar, setbar] = useState(false);
 
   const toggleNav = () => {
     setbar(!bar);
@@ -12,7 +12,7 @@ const Navbar = ({ items }) => {
     <div className="nav--container">
       <div
         onClick={toggleNav}
-        className={bar ? "toggle-navbar" : "toggle-navbar active"}
+        className={bar ? "toggle-navbar active" : "toggle-navbar"}
       >
         <div className="bar"></div>
         <div className="bar"></div>
@@ -23,7 +23,7 @@ const Navbar = ({ items }) => {
           <a>Scoot</a>
         </div>
         <div className="nav">
-          <div className={bar ? "navItems" : "navItems active"}>
+          <div className={bar ? "navItems active" : "navItems"}>
             <ul type="none" className="nav--list">
               {items.map((item, index) => (
                 <li key={index}>
