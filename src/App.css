@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ::selection {
   user-select: none;
 }
@@ -775,20 +779,59 @@ section.map {
 /* ----------------------------------------------- ----------------------------------------------- */
 /* ----------------------------------------------- ----------------------------------------------- */
 
-@media (max-width: 1400px) {
-  .details > p::after {
+@media (max-width: 380px) {
+  .heading {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 430px) {
+  .heading {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-button {
     display: none;
   }
-  .details > p::before {
+}
+
+@media (max-width: 600px) {
+  .paragraph > p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 700px) {
+  .heading {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav {
     display: none;
   }
-  .hero--content {
-    grid-template-columns: 1fr;
-    text-align: center;
+
+  .bar {
+    display: block;
   }
-  .details {
-    width: 100%;
-    padding-inline-end: 0;
+}
+
+@media (max-width: 980px) {
+  .say-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .faqs-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
   }
 }
 
@@ -833,6 +876,23 @@ section.map {
   }
 }
 
+@media (max-width: 1400px) {
+  .details > p::after {
+    display: none;
+  }
+  .details > p::before {
+    display: none;
+  }
+  .hero--content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .details {
+    width: 100%;
+    padding-inline-end: 0;
+  }
+}
+
 @media (max-width: 1800px) {
   .abt-col1::before {
     display: none;
@@ -840,45 +900,5 @@ section.map {
 
   .abt-col2::before {
     display: none;
-  }
-}
-
-@media (max-width: 1030px) {
-  .faqs-content {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-  }
-}
-
-@media (max-width: 700px) {
-  .heading {
-    min-width: 400px;
-  }
-}
-
-@media (max-width: 430px) {
-  .heading {
-    min-width: 300px;
-  }
-}
-
-@media (max-width: 380px) {
-  .heading {
-    min-width: 200px;
-  }
-}
-
-@media (max-width: 600px) {
-  .paragraph > p {
-    text-align: justify;
-  }
-}
-
-@media (max-width: 980px) {
-  .say-content {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
   }
 }
