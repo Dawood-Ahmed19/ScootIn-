@@ -820,7 +820,6 @@ section.map {
     background-color: var(--dark-navy);
     margin-top: 50px;
     display: flex;
-    align-items: self-start;
     padding: 60px 30px;
     display: flex;
     flex-direction: column;
@@ -833,7 +832,6 @@ section.map {
 
   .nav .navItems > ul {
     flex-direction: column;
-    text-align: center;
   }
 
   .mob-button {
