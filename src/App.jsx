@@ -8,10 +8,16 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 
 function App() {
+  const navItems = [
+    { link: "/", label: "Home" },
+    { link: "/About", label: "About" },
+    { link: "/Locations", label: "Location" },
+    { link: "/Careers", label: "Careers" },
+  ];
   return (
     <BrowserRouter>
       <header className="header">
-        <Navbar />
+        <Navbar items={navItems} />
       </header>
       <Routes>
         <Route exact path="*" element={<Home />} />

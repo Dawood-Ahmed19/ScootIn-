@@ -1,35 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ items }) => {
   return (
     <div className="nav--container">
       <div className="nav-content">
+        <div className="toggle-navbar">
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
         <div className="logo">
           <a>Scoot</a>
         </div>
         <div className="nav">
           <ul type="none" className="nav--list">
-            <li>
-              <NavLink className="nav--item" to="/Home">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="nav--item" to="/About">
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="nav--item" to="/Locations">
-                Location
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="nav--item" to="/Careers">
-                Careers
-              </NavLink>
-            </li>
+            {items.map((item, index) => (
+              <li key={index}>
+                <NavLink to={item.link}>{item.label}</NavLink>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
