@@ -27,7 +27,9 @@ const Navbar = ({ items }) => {
             <ul type="none" className="nav--list">
               {items.map((item, index) => (
                 <li key={index}>
-                  <NavLink to={item.link}>{item.label}</NavLink>
+                  <NavLink onClick={toggleNav} to={item.link}>
+                    {item.label}
+                  </NavLink>
                 </li>
               ))}
             </ul>
